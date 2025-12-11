@@ -1,73 +1,112 @@
-# React + TypeScript + Vite
+# 🌐 Sistema de Gestión de Biblioteca - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción
+Aplicación web desarrollada con React 18, TypeScript, Vite, Material-UI y Axios para consumir la API de gestión de biblioteca universitaria.
 
-Currently, two official plugins are available:
+🎨 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18 - Biblioteca para interfaces de usuario
 
-## React Compiler
+- TypeScript - Tipado estático
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Vite - Bundler y servidor de desarrollo rápido
 
-## Expanding the ESLint configuration
+- Material-UI (MUI) - Componentes UI
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Axios - Cliente HTTP
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React Router DOM - Navegación
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- date-fns - Manipulación de fechas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+⚙️ Requisitos Previos
+
+- Node.js 18+
+
+- Git
+
+- Navegador web moderno (Chrome, Firefox, Edge)
+
+- API Backend ejecutándose en el puerto correcto
+
+# 🚀 Configuración y Ejecución
+
+1. Clonar el repositorio
+
+```
+git clone https://github.com/Jhostin23-06/DSW1_T2_BRAVO_MANGIER_JHOSTIN_WEB
+cd DSW1_T2_BRAVO_MANGIER_JHOSTIN_WEB
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instalar dependencias
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+npm install
+```
+
+3. Ejecutar en modo desarrollo
+
+```
+npm run dev
+```
+
+4. Abrir en el navegador según la url que le aparece al ejecutar en modo desarrollo
+
+```
+Ejemplo: http://localhost:3000
+```
+
+# 📱 Funcionalidades
+
+## 📚 Módulo de Libros
+
+✅ Listar libros con: Título, Autor, ISBN y Stock
+
+✅ Formulario para registrar nuevo libro
+
+✅ Editar libro existente
+
+✅ Eliminar libro (con validaciones)
+
+✅ Búsqueda por título/autor
+
+
+## 📝 Módulo de Préstamos
+
+✅ Listar préstamos activos
+
+✅ Formulario para nuevo préstamo
+
+✅ Selector de libros disponibles
+
+✅ Botón para devolver préstamo
+
+✅ Mensaje de error si no hay stock
+
+✅ Indicador de préstamos vencidos
+
+## 🎨 Características UI/UX
+
+✅ Diseño responsive (funciona en móviles y desktop)
+
+✅ Dark/Light theme (Material-UI)
+
+✅ Snackbars para notificaciones
+
+✅ Loaders durante operaciones async
+
+✅ Validación de formularios
+
+✅ Confirmación antes de eliminaciones
+
+✅ Indicadores visuales de estado
+
+# 👥 Autores
+## Jhostin Ruben Bravo Mangier
+
+## Curso: Desarrollo de Servicios Web I
+
+## Cibertec
+
+# 📄 Licencia
+## Este proyecto es para fines educativos.
