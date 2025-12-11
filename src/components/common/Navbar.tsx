@@ -19,7 +19,6 @@ import {
   Book as BookIcon,
   LibraryBooks as LoanIcon,
   Home as HomeIcon,
-  Search as SearchIcon,
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -75,42 +74,11 @@ const Navbar: React.FC = () => {
           </Box>
         </Box>
         <Typography variant="body2" sx={{ opacity: 0.8 }}>
-          Universidad Tecnológica
+          Biblioteca Universitaria
         </Typography>
       </Box>
 
       {/* Barra de búsqueda */}
-      <Box sx={{ p: 2 }}>
-        <Box sx={{ 
-          position: 'relative',
-          backgroundColor: theme.palette.action.hover,
-          borderRadius: 1,
-          overflow: 'hidden',
-        }}>
-          <Box sx={{ 
-            position: 'absolute', 
-            left: 12, 
-            top: '50%', 
-            transform: 'translateY(-50%)',
-            color: theme.palette.text.secondary,
-          }}>
-            <SearchIcon fontSize="small" />
-          </Box>
-          <input
-            type="text"
-            placeholder="Buscar libros..."
-            style={{
-              width: '100%',
-              padding: '10px 12px 10px 40px',
-              border: 'none',
-              backgroundColor: 'transparent',
-              fontSize: '0.875rem',
-              outline: 'none',
-              color: theme.palette.text.primary,
-            }}
-          />
-        </Box>
-      </Box>
 
       {/* Menú principal */}
       <List sx={{ flexGrow: 1, p: 2 }}>

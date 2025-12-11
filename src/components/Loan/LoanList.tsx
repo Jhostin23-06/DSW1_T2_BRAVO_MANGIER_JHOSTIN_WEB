@@ -44,8 +44,6 @@ import {
     CalendarToday as CalendarIcon,
     CheckCircle as CheckCircleIcon,
     Clear as ClearIcon,
-    FilterList as FilterIcon,
-    Download as DownloadIcon,
 } from '@mui/icons-material';
 import { format, differenceInDays, isAfter } from 'date-fns';
 import { es } from 'date-fns/locale';
@@ -357,6 +355,7 @@ const LoanList: React.FC = () => {
                             </Box>
                         </CardContent>
                     </Card>
+                    
 
                     {/* Préstamos activos */}
                     <Card sx={{ 
@@ -509,31 +508,9 @@ const LoanList: React.FC = () => {
                         alignItems: 'center',
                         width: { xs: '100%', md: 'auto' }
                     }}>
-                        <Box sx={{ display: 'flex', gap: 1 }}>
-                            <Tooltip title="Filtrar">
-                                <IconButton 
-                                    sx={{ 
-                                        border: `1px solid ${theme.palette.divider}`,
-                                        borderRadius: 2,
-                                    }}
-                                >
-                                    <FilterIcon />
-                                </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Exportar">
-                                <IconButton 
-                                    sx={{ 
-                                        border: `1px solid ${theme.palette.divider}`,
-                                        borderRadius: 2,
-                                    }}
-                                >
-                                    <DownloadIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Box>
                         <Box display="flex" alignItems="center">
-                            <Badge badgeContent={filteredLoans.length} color="primary" sx={{ mr: 1 }}>
-                                <Typography variant="body2" color="text.secondary">
+                            <Badge badgeContent={filteredLoans.length} color="primary" sx={{ mr: 2, ml: 1 }}>
+                                <Typography variant="body2" color="text.secondary" sx={{ marginRight: 1 }}>
                                     Resultados
                                 </Typography>
                             </Badge>
@@ -575,7 +552,7 @@ const LoanList: React.FC = () => {
                                             No se encontraron préstamos
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            {searchTerm ? 'Intenta con otros términos de búsqueda' : selectedTab === 0 ? 'No hay préstamos activos' : 'No hay préstamos en esta categoría'}
+                                            {searchTerm ? 'Intenta con otros términos de búsqueda' : selectedTab === 0 ? 'No hay préstamos activos' : 'No hay préstamos disponibles'}
                                         </Typography>
                                         {!searchTerm && selectedTab === 0 && (
                                             <Button
@@ -668,6 +645,7 @@ const LoanList: React.FC = () => {
                                                             sx={{
                                                                 minWidth: 'auto',
                                                                 px: 2,
+                                                                color: "white"
                                                             }}
                                                         >
                                                             Devolver
