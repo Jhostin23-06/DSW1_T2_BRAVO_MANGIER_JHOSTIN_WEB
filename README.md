@@ -29,7 +29,7 @@ Aplicación web desarrollada con React 18, TypeScript, Vite, Material-UI y Axios
 
 - API Backend ejecutándose en el puerto correcto
 
-# 🚀 Configuración y Ejecución
+## 🚀 Configuración y Ejecución
 
 1. Clonar el repositorio
 
@@ -56,9 +56,9 @@ npm run dev
 Ejemplo: http://localhost:3000
 ```
 
-# 📱 Funcionalidades
+## 📱 Funcionalidades
 
-## 📚 Módulo de Libros
+### 📚 Módulo de Libros
 
 ✅ Listar libros con: Título, Autor, ISBN y Stock
 
@@ -71,7 +71,7 @@ Ejemplo: http://localhost:3000
 ✅ Búsqueda por título/autor
 
 
-## 📝 Módulo de Préstamos
+### 📝 Módulo de Préstamos
 
 ✅ Listar préstamos activos
 
@@ -85,7 +85,7 @@ Ejemplo: http://localhost:3000
 
 ✅ Indicador de préstamos vencidos
 
-## 🎨 Características UI/UX
+### 🎨 Características UI/UX
 
 ✅ Diseño responsive (funciona en móviles y desktop)
 
@@ -101,12 +101,12 @@ Ejemplo: http://localhost:3000
 
 ✅ Indicadores visuales de estado
 
-# 👥 Autores
-## Jhostin Ruben Bravo Mangier
+## 👥 Autores
+Jhostin Ruben Bravo Mangier
 
-## Curso: Desarrollo de Servicios Web I
+Curso: Desarrollo de Servicios Web I
 
-## Cibertec
+Cibertec
 
-# 📄 Licencia
-## Este proyecto es para fines educativos.
+## 📄 Licencia
+Este proyecto es para fines educativos.
